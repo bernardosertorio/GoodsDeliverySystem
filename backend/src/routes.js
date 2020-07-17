@@ -1,6 +1,6 @@
-import { Router } from "express"
-import MapController from "./app/controllers/MapController"
-import UsersController from "./app/controllers/UsersController"
+const { Router } = require("express")
+const MapController =  require("./app/controllers/MapController")
+const UsersController = require("./app/controllers/UsersController")
 
 
 
@@ -15,4 +15,4 @@ routes.get("/deliveries/:id", MapController.index)
 
 
 
-export default routes
+module.exports = routes
