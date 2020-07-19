@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FiLogIn } from 'react-icons/fi'
 
 import './styles.css'
@@ -20,10 +21,10 @@ export default function OrderRecord() {
 
           <button className="button" type="submit">Register order</button>
 
-          <a href="/list">
+          <Link to="/listrecords">
             <FiLogIn size={16} color="#E02041" />
             List of delivery orders
-          </a>
+          </Link>
 
         </form>
       </section>
