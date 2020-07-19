@@ -28,7 +28,7 @@ export default function ListRecords() {
           <strong>Final Location</strong>
           <p>Copacaban</p>
 
-          <Link className="button" to="/">Details</Link>
+          <Link className="button" to="/register/show">Details</Link>
         </li>
 
         <li>
@@ -47,7 +47,7 @@ export default function ListRecords() {
           <strong>Final Location</strong>
           <p>Copacaban</p>
 
-          <Link className="button" to="/">Details</Link>
+          <Link className="button" to="/register/show">Details</Link>
         </li>
 
         <li>
@@ -66,7 +66,7 @@ export default function ListRecords() {
           <strong>Final Location</strong>
           <p>Copacaban</p>
 
-          <Link className="button" to="/">Details</Link>
+          <Link className="button" to="/register/show">Details</Link>
         </li>
       </ul>
 
