@@ -19,7 +19,7 @@ export default function OrderRecord() {
           <input placeholder="Starting point" />
           <input placeholder="Arrival point" />
 
-          <button className="button" type="submit">Register order</button>
+          <Link to="/listrecords" className="button" type="submit">Register Delivery</Link>
 
           <Link to="/listrecords">
             <FiLogIn size={16} color="#E02041" />
