@@ -30,7 +30,7 @@
   margin-bottom: 15px;
 }
 
-.orderRecord-container section.form form a {
+.orderRecord-container section.form form a + a {
   display: flex;
   align-items: center;
   margin-top: 15px;
