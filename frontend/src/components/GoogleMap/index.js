@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useCallback } from 'react'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Geocode from 'react-geocode'
@@ -13,7 +13,7 @@ function GoogleMaps({ match }) {
 
   const [ways, setWays] = useState('')
 
-  async function loadWays() {
+  const loadWays = useCallback( async () => { 
 
     const apiResponse = await api.get(`/register/${match.params.id}`)
 
@@ -51,20 +51,17 @@ function GoogleMaps({ match }) {
       }
       }
     )
-  }
 
-  loadWays = useCallback(
-    () => {
-      ()
-    },[]
-  ) 
+  },[match.params.id])
 
   return (
     <GoogleMap
+      value={loadWays}
       defaultZoom={10}
       defaultCenter={{ lat: -22.9035, lng: -43.2096 }}
       defaultOptions={{ styles: MapStyles }}
     >
+      {match}
       <DirectionsRenderer ways={ways} />
     </GoogleMap>
   )
