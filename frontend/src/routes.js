@@ -11,7 +11,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={OrderRecord} />
         <Route path="/listrecords" component={ListRecords} />
-        <Route path="/register/show" component={ShowRegister} />
+        <Route path="/listrecords/:id" component={ShowRegister} />
       </Switch>
     </BrowserRouter>
   )
