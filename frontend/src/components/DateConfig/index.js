@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import ReactDatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
-import { useField } from '@unform/core'
+import { useField } from '@rocketseat/unform'
 
 
 
