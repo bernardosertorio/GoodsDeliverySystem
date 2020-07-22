@@ -4,7 +4,7 @@ module.exports = {
   host: "localhost",
   username: "bernardosertorio",
   password: "",
-  database: "deliveryusers",
+  database: "deliveries",
   define: {
     timestamps: true,
     underscored: true,
