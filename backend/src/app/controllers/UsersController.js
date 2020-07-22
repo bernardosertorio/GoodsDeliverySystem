@@ -43,7 +43,7 @@ module.exports = {
 
     const startTime = startOfHour(parseISO(date))
 
-    if (isBefore(startTime, new Date())) {
+    if (isBefore(startTime, new Date(date))) {
       return res
         .status(400)
         .json({error: "Previous dates are invalid"})
