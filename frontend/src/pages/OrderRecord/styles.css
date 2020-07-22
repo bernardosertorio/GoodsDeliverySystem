@@ -30,7 +30,7 @@
   margin-bottom: 15px;
 }
 
-.orderRecord-container section.form form a + a {
+.orderRecord-container section.form a {
   display: flex;
   align-items: center;
   margin-top: 15px;
@@ -41,7 +41,7 @@
   transition: opacity 0.2s;
 }
 
-.orderRecord-container section.form form a svg {
+.orderRecord-container section.form a svg {
   margin-right: 8px;
 }
 
