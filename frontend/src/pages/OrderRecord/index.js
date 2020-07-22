@@ -72,11 +72,13 @@ function OrderRecord({history}) {
 
           <button className="button" type="submit">Register Delivery</button> 
 
-          <Link to="/listrecords">
+        </Form>
+
+        <Link to="/listrecords">
             <FiLogIn size={16} color="#E02041" />
             List of delivery orders
           </Link>
-        </Form>
+
       </section>
     </div>
   )
