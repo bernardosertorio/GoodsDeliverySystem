@@ -6,6 +6,6 @@ font-size: 16px;
 
 div[class='suggestion-item-active'] {
   background-color: #3b9eff;
-  color: #fff;
+  color: #000;
 }
 `
