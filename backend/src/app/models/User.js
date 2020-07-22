@@ -1,12 +1,12 @@
-const { Model, DataTypes } = require('sequelize')
+const { Sequelize, Model } = require('sequelize')
 
 class User extends Model {
   static init(sequelize) {
     super.init({  
-      name: DataTypes.STRING,
-      date: DataTypes.DATE,
-      starting_journey: DataTypes.STRING,
-      ending_journey: DataTypes.STRING,
+      name: Sequelize.STRING,
+      date: Sequelize.DATE,
+      starting_journey: Sequelize.STRING,
+      ending_journey: Sequelize.STRING,
     }, {
       sequelize
     })
