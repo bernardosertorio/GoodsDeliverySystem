@@ -15,7 +15,7 @@ function GoogleMaps({ match }) {
 
   const loadWays = useCallback( async () => { 
 
-    const apiResponse = await api.get(`/register/${match.params.id}`)
+    const apiResponse = await api.get(`/listrecords/${match.params.id}`)
 
     const { starting_journey, ending_journey } = apiResponse.data
 
