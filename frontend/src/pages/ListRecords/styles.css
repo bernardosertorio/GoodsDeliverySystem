@@ -1,4 +1,5 @@
 .listrecords-container {
+  display: grid;
   width: 100%;
   max-width: 1180px;
   padding: 0 30px;
@@ -23,9 +24,9 @@
 
 .listrecords-container ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20px;
-  grid-gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  grid-gap: 20px;
   list-style: none;
 }
 

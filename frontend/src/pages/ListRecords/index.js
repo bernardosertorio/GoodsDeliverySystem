@@ -15,7 +15,7 @@ export default function ListRecords() {
   
   async function loadRecords(page = 1) {
 
-    const response = await api.get('/listrecords', {
+    const response = await api.get('/deliveries', {
       params: {
         page
       }
@@ -50,7 +50,6 @@ export default function ListRecords() {
   }
   
 
-
   return (
 
     <div className="listrecords-container">
@@ -59,7 +58,7 @@ export default function ListRecords() {
         <h1>Delivery list</h1>
         <Link className="button" to="/"> Register New </Link>
       </header>
-
+      
       {records.map(deliveryuser => (
 
         <ul key={deliveryuser.id}>
@@ -79,7 +78,7 @@ export default function ListRecords() {
           <strong>Final Location</strong>
           <p>{deliveryuser.ending_journey}</p>
 
-          <Link className="button" to={`/listrecords/${deliveryuser.id}`}>Details</Link>
+          <Link className="button" to={`/deliveries/${deliveryuser.id}`}>Details</Link>
           </li>
         </ul>
 
