@@ -20,11 +20,11 @@
   margin-right: 30px;
 }
 
-.orderRecord-container section.form form {
+.orderRecord-container section.form h2 {
   margin-top: 65px;
 }
 
-.orderRecord-container section.form form h2 {
+.orderRecord-container section h2 {
   font-size:20px;
   margin-top: 32px;
   margin-bottom: 15px;

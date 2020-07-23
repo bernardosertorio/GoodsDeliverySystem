@@ -30,7 +30,7 @@ function OrderRecord({history}) {
     e.preventDefault()
 
     try {
-      await api.post('/', {
+      await api.post('/deliveries', {
         name: data.name,
         date: data.date,
         starting_journey: start,
@@ -50,23 +50,24 @@ function OrderRecord({history}) {
       <section className="form">
         <h1> Goods Delivery System </h1>
 
-        <Form onSubmit={handleRegister} schema={schema}>
-          <h2>Delivery Record</h2>
+        <h2>Delivery Record</h2>
 
+        <Form onSubmit={handleRegister} schema={schema}>
+        
           <Input type="text" name="name" placeholder="Client's name" />
           <DateConfig name="date" />
           <PlacesComplete
             onChange={setStart}
             value={start}
             onSelect={data => setStart(data)}
-            name={start}
+            name="starting_journey"
             placeholder="Starting point" 
           />
           <PlacesComplete
             onChange={setEnd}
             value={end}
             onSelect={data => setEnd(data)}
-            name={end}
+            name="ending_journey"
             placeholder="Arrival point" 
           />
 
