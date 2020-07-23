@@ -4,13 +4,8 @@ import { Input } from '@rocketseat/unform'
 import { Container } from './styles'
 import PropTypes from 'prop-types'
 
-export default function PlacesComplete({
-  onSelect,
-  onChange,
-  value,
-  placeholder,
-  name
-}) {
+export default function PlacesComplete({onSelect, onChange, value, placeholder, name}) {
+  
   PlacesComplete.defaultProps ={
     placeholder: "Campo de input",
     name: 'autocomplete'
