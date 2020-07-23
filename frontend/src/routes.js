@@ -11,7 +11,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={OrderRecord} />
         <Route path="/listrecords" component={ListRecords} />
-        <Route path="/listrecords/:id" component={ShowMapRegister} />
+        <Route path="/deliveries/:id" component={ShowMapRegister} />
       </Switch>
     </BrowserRouter>
   )

@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-inpur, button, textarea {
+input, button, textarea {
   font: 400 18px Roboto, sans-serif;
 }
 
@@ -32,6 +32,7 @@ form input {
   border-radius: 8px;
   padding: 0 24px;
 }
+
 
 .button {
   width: 100%;
